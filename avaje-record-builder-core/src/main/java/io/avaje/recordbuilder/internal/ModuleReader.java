@@ -25,9 +25,6 @@ final class ModuleReader {
                     "`requires io.avaje.recordbuilder` should be `requires static io.avaje.recordbuilder`",
                     module);
               }
-              if (line.contains("io.avaje.recordbuilder.core")) {
-                logWarn("io.avaje.recordbuilder.core should not be used", module);
-              }
             });
   }
 }
